@@ -10,6 +10,10 @@ const plantSchema = new mongoose.Schema(
 			type: String,
 			required: true,
 		},
+		// edible: {
+		// 	type: Boolean,
+		// 	required: true,
+		// },
 		owner: {
 			type: mongoose.Schema.Types.ObjectId,
 			ref: 'User',
