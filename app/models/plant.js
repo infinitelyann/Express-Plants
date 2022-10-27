@@ -10,6 +10,10 @@ const plantSchema = new mongoose.Schema(
 			type: String,
 			required: true,
 		},
+		// color: {
+		// 	type: String,
+		// 	required: true,
+		// },
 		// edible: {
 		// 	type: Boolean,
 		// 	required: true,
