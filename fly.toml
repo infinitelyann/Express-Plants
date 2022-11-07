@@ -1,17 +1,13 @@
-# fly.toml file generated for plants-app on 2022-11-07T16:43:23-05:00
+# fly.toml file generated for plant on 2022-11-07T17:40:42-05:00
 
-app = "plants-app"
+app = "plant"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
 
-[build]
-  builder = "heroku/buildpacks:20"
-
 [env]
-  PORT = "8080"
-  MONGO_URI="mongodb+srv://saparker:<043097>@angstyblogcluster.gotapn1.mongodb.net/plants?retryWrites=true&w=majority"
-  
+PORT = "8000"
+MONGODB_URI = "mongodb+srv://saparker:<043097>@angstyblogcluster.gotapn1.mongodb.net/plants?retryWrites=true&w=majority"
 
 [experimental]
   allowed_public_ports = []
